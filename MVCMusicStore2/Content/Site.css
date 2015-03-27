@@ -253,7 +253,7 @@ legend
 
 fieldset
 {
-	border: #9b9993 1px solid;
+    border: #9b9993 1px solid; 
 	padding: 0 10px;
 	margin-bottom: 10px;
 	clear: left;
@@ -296,7 +296,7 @@ input[type=text], input[type=password], select
 /* Tables */
 table
 {
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	border-collapse: collapse;
 	color: #666666;
 	min-width: 500px;
@@ -305,7 +305,7 @@ table
 
 tr
 {
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	line-height: 25px;
 }
 

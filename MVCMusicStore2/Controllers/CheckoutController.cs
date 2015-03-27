@@ -47,7 +47,7 @@ namespace MVCMusicStore2.Controllers
                     cart.CreateOrder(order);
 
                     return RedirectToAction("Complete",
-                        new { id = order.OrderId ,email = order.Email });
+                        new { id = order.OrderId ,email = order.Email});
                 }
             }
             catch
