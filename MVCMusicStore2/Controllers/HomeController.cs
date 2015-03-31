@@ -30,7 +30,7 @@ namespace MVCMusicStore2.Controllers
 
             APICall apiTest = new APICall();
             apiTest.login();
-            apiTest.mergeListMembers("DK_CONTACTS_LIST", "DK", emailAddress, fName, lName,"I");
+            apiTest.mergeListMembers("DK_CONTACTS_LIST", "DK", emailAddress, fName, lName);
             apiTest.logout();
             apiTest.login();
             apiTest.triggerCustomEvent(emailAddress);
