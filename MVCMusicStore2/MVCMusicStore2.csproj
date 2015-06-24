@@ -167,7 +167,9 @@
       <DependentUpon>Database1.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Home.jpg" />
+    <Content Include="Content\Home.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Images\home-showcase.png" />
     <Content Include="Content\Images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -228,7 +230,9 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\Site.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\TestCE %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\TestCE.pubxml" />
     <Content Include="Views\Store\GenreMenu.cshtml" />
