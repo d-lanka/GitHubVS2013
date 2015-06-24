@@ -7,9 +7,13 @@
 
 body
 {
+    
+    background-image: url("Home.jpg");
+    background-color: #cccccc;
+
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	background-color: #FBF9EF;
+	background-color: #000000;
 	padding: 0px 6%;
 }
 
@@ -84,8 +88,12 @@ ul#album-list li a, ul#album-list li .button
 
 ul#album-list li a span
 {
-	color: #9b9993;
+	color: #333333;
 	text-decoration: underline;
+}
+ul#album-list li a span:hover
+{
+	color: #F46739;
 }
 
 #cart
@@ -121,8 +129,7 @@ ul#album-list li a span
 	clear: both;
 	padding: 10px;
 	text-align: right;
-	border-top: 1px dotted #8A8575;
-	border-bottom: 1px dotted #8A8575;
+	
 	font-family: Constantia, Georgia, serif;
 }
 
@@ -167,7 +174,7 @@ p
 
 h2
 {
-	color: #5e5b54;
+	color: #cccccc;
 }
 
 h2, h3
@@ -180,12 +187,12 @@ h2, h3
 
 h3
 {
-	color: #9B9993;
+	color: #000000;
 }
 
 #header h1 a, h3 em
 {
-	color: #5E5B54;
+	color: #000000;
 }
 
 a:link, a:visited
@@ -215,7 +222,7 @@ a:active
 {
 	font-family: Constantia, Georgia, serif;
 	list-style-type: none;
-	border-right: #5d5a53 1px dotted;
+	
 	padding-right: 10px;
 	margin: 0 25px 0 0;
 	float: left;
@@ -223,7 +230,7 @@ a:active
 
 #categories a:link, #categories a:visited
 {
-	color: #9B9993;
+	color: #000000;
 	text-decoration: none;
 }
 
@@ -241,7 +248,7 @@ div#album-details p
 
 p em
 {
-	color: #9b9993;
+	color: #000000;
 }
 
 /* Form styles */

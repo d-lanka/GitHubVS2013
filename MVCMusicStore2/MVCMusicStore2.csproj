@@ -167,6 +167,7 @@
       <DependentUpon>Database1.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Home.jpg" />
     <Content Include="Content\Images\home-showcase.png" />
     <Content Include="Content\Images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -230,6 +231,7 @@
     <Content Include="Content\Site.css" />
     <None Include="Properties\PublishProfiles\TestCE %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\TestCE.pubxml" />
+    <Content Include="Views\Store\GenreMenu.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
@@ -298,7 +300,6 @@
     <Content Include="Views\Checkout\AddressAndPayment.cshtml" />
     <Content Include="Views\Checkout\Complete.cshtml" />
     <Content Include="Views\ShoppingCart\CartSummary.cshtml" />
-    <Content Include="Views\Store\GenreMenu.cshtml" />
     <Content Include="Views\Home\QSU.cshtml" />
     <Content Include="Views\Home\RecordQSU.cshtml" />
     <Content Include="Views\Home\Unsubscribe_View.cshtml" />

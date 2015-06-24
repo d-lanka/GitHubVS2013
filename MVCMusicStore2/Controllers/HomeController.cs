@@ -1,4 +1,5 @@
 ﻿using APITestWebApp.WebServiceCode;
+using MVCMusicStore2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,10 @@ namespace MVCMusicStore2.Controllers
     {
         //
         // GET: /Home/
-
+        MusicStoreEntities storeDB = new MusicStoreEntities();
         public ActionResult Index()
         {
+            var albums = GetTopSellingAlbums(5);
             return View();
         }
         public ActionResult QSU()
@@ -30,7 +32,7 @@ namespace MVCMusicStore2.Controllers
 
             APICall apiTest = new APICall();
             apiTest.login();
-            apiTest.mergeListMembers("DK_CONTACTS_LIST", "DK", emailAddress, fName, lName);
+            apiTest.mergeListMembers("DK_CONTACTS_LIST", "DK", emailAddress, fName, lName,"I");
             apiTest.logout();
             apiTest.login();
             apiTest.triggerCustomEvent(emailAddress);
@@ -57,6 +59,15 @@ namespace MVCMusicStore2.Controllers
             apiTest.logout();
 
             return View();
+        }
+        public List<Album> GetTopSellingAlbums(int count)
+        {
+            // Group the order details by album and return
+            // the albums with the highest count
+            return storeDB.Albums
+                .OrderByDescending(a => a.OrderDetails.Count())
+                .Take(count)
+                .ToList();
         }
 
     }
