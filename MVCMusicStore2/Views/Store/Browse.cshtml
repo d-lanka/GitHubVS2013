@@ -6,18 +6,20 @@
 
 <div class="genre">
     <h3><em>@Model.Name</em> Albums</h3>
-
-    <ul id="album-list">
-        @foreach (var album in Model.Albums)
-        {
-            <li>
-                <a href="@Url.Action("Details",
+ 
+            <ul id="album-list" >
+                @foreach (var album in Model.Albums)
+                {
+                    <li>
+                        <a href="@Url.Action("Details",
                     new { id = album.AlbumId })">
-                    <img alt="@album.Title"
-                         src="@album.AlbumArtUrl" />
-                    <span>@album.Title</span>
-                </a>
-            </li>
-        }
-    </ul>
+                            <img alt="@album.Title"
+                                 src="@album.AlbumArtUrl" />
+                            <span>@album.Title</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+       
+   
 </div>
