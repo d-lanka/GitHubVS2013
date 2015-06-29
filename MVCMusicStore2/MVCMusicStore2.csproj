@@ -171,9 +171,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Images\home-showcase.png" />
-    <Content Include="Content\Images\LiveAfterDeath.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Content\Images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -240,7 +237,6 @@
     <None Include="Properties\PublishProfiles\TestCE.pubxml" />
     <Content Include="Views\Store\GenreMenu.cshtml" />
     <Content Include="Views\Store\Browse.cshtml" />
-    <Content Include="Views\StoreManager\Edit.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
@@ -298,6 +294,7 @@
     <Content Include="Views\StoreManager\Index.cshtml" />
     <Content Include="Views\StoreManager\Details.cshtml" />
     <Content Include="Views\StoreManager\Create.cshtml" />
+    <Content Include="Views\StoreManager\Edit.cshtml" />
     <Content Include="Views\StoreManager\Delete.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
