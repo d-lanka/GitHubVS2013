@@ -757,7 +757,7 @@ namespace APITestWebApp.WebServiceCode
 
             ListMergeRule listMergeRule = new ListMergeRule();
 
-            bool insertOnNoMatch = false;//"Y".Equals(getUserInput("Do you want to insert the record if match is not found (Y/N) : "));
+            bool insertOnNoMatch = true;//"Y".Equals(getUserInput("Do you want to insert the record if match is not found (Y/N) : "));
             string updateOnMatchStr = "REPLACE_ALL";//getUserInput("Enter the update rule if record is found (REPLACE_ALL, NO_UPDATE, REPLACE_IF_EXISTING_BLANK, REPLACE_IF_NEW_BLANK) : ");
             UpdateOnMatch updateOnMatch = (UpdateOnMatch)Enum.Parse(typeof(UpdateOnMatch), updateOnMatchStr, true);
             string matchColumnName1 = "EMAIL_ADDRESS_";//getUserInput("Enter the match column name 1 for the merge : ");
