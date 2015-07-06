@@ -29,6 +29,7 @@ namespace MVCMusicStore2.Controllers
             string fName = Request["name"];
             string lName = Request["lastname"];
             string emailAddress = Request["email"];
+            ViewBag.email = emailAddress;
 
             APICall apiTest = new APICall();
             apiTest.login();

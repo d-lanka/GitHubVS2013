@@ -19,7 +19,7 @@ bk_doJSTag(26025, 4);
     <table>
         <tr>
             <td align="left">First name:</td>
-            <td align="leftt">
+            <td align="left">
                 @Html.TextBox("Name")
             </td>
         </tr>
@@ -31,6 +31,6 @@ bk_doJSTag(26025, 4);
             <td align="left">Email</td>
             <td align="left">@Html.TextBox("email") </td>
         </tr>
-        <tr><td><input type="submit" value="Sign Up"></td></tr>
+        <tr><td><input type="submit" value="Sign Up" onclick="bk_addEmailHash(@Request.Form["email"])"></td></tr>
     </table>
 }
